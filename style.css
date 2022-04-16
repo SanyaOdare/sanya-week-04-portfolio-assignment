@@ -162,8 +162,9 @@ section#slideshow {
 }
 
 h2.service-hd {
-  color: #5B43D6;
-  font-size: 1rem;
+  color: #7057ec;
+  font-size: .97rem;
+  opacity: .9;
 }
 
 .fa-mobile-signal-out {
@@ -182,7 +183,7 @@ button.btn-control {
   display: none;
 }
 
-.btn-slideshow {
+.btn-plain {
   border: 1px solid var(--primary-purple);
   color: var(--primary-purple);
   background-color: #fff;  
@@ -190,7 +191,15 @@ button.btn-control {
   padding: 1rem 2.2rem;
 }
 
+hr {
+  border: .5px solid var(--mid-grey);
+}
+
 /* FREE TRIAL SECTION */
+video {
+  background-image: url('./images/jonny-me-video.jpg');
+  width: 100%;
+}
 
 /* PORTFOLIO */
 
