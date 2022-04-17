@@ -117,6 +117,11 @@ img.hamburger {
 }
 
 /* UTILITY CLASSES */
+
+section.container.section {
+  padding: 60px 28px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -129,6 +134,14 @@ img.hamburger {
   padding: 1rem 2.2rem;
 }
 
+.btn-plain:hover {
+  border: none;
+  color: var(--whitee);
+  background-color: var(--primary-purple);
+  font-size: 1rem;
+  padding: 1rem 2.2rem;
+}
+
 .btn-fill {
   border: none;
   color: var(--whitee);
@@ -136,6 +149,15 @@ img.hamburger {
   font-size: 1rem;
   padding: 1rem 2.2rem;
 }
+
+.btn-fill:hover {
+  border: 1px solid var(--primary-purple);
+  color: var(--btn-purple);
+  background-color: var(--whitee);
+  font-size: 1rem;
+  padding: 1rem 2.2rem;
+}
+
 
 p.section-info {
   margin: 0 0 4.5rem;
@@ -153,6 +175,10 @@ p.section-info {
 
 
 /* HERO SECTION */
+
+section#hero {
+  background-color: var(--deep-purple);
+}
 
 .hero-container {
   background-color: var(--primary-purple);
@@ -214,13 +240,14 @@ button.btn-control {
 
 hr {
   border: .5px solid var(--mid-grey);
+  margin: 0;
 }
 
 /* VIDEO DEMO TRIAL SECTION */
 
-section#video-demo {
+/* section#video-demo {
   padding: 4rem 2.5rem;
-}
+} */
 
 .marker-container {
   padding: 0 .7rem 0;
@@ -230,10 +257,6 @@ video {
   background-image: url('./images/jonny-me-video.jpg');
   object-fit: cover;
   width: 100%;
-}
-
-h3.marker-hd {
-
 }
 
 p.marker-info {
@@ -247,14 +270,45 @@ button.btn-video-demo {
 
 /* PORTFOLIO */
 
+.portfolio-img-container {
+  padding: 0px 28px;
+}
+
+.portfolio-info-container {
+  padding: 16px 28px;
+}
+
+h2.portfolio-hd {
+  letter-spacing: 3px;
+  margin: 0 0 4.38rem;
+}
+
+p.portfolio-info {
+  color: var(--dark-grey);
+  font-size: .9rem;
+  margin: 0 18.5px 30px;
+}
+
+p.design-by {
+  margin: 0 0 30px;
+}
+
+small {  
+  margin-bottom: 0 0 30px;
+}
+
+a.design-by {
+  color: var(--primary-purple);
+}
+
 /* CARD SECTION */
 
 /* FORM SECTION */
 
-#footer {
+footer#footer {
   background-color: var(--light-grey);
-  height: 150px;
-  padding: 2rem;
+  /* height: 150px; */
+  padding: 50px 0 100px;
 }
 
 .footer-item-container {
