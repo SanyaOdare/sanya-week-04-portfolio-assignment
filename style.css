@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
+  --btn-purple: #5a43db;
   --dark-grey: #808080;
   --deep-purple: #5910b9;
   --deepest-purple: #36007e;
@@ -115,14 +116,49 @@ img.hamburger {
   height: 1.2rem;
 }
 
+/* UTILITY CLASSES */
+.text-center {
+  text-align: center;
+}
+
+.btn-plain {
+  border: 1px solid var(--primary-purple);
+  color: var(--primary-purple);
+  background-color: var(--whitee);
+  font-size: 1rem;
+  padding: 1rem 2.2rem;
+}
+
+.btn-fill {
+  border: none;
+  color: var(--whitee);
+  background-color: var(--btn-purple);
+  font-size: 1rem;
+  padding: 1rem 2.2rem;
+}
+
+p.section-info {
+  margin: 0 0 4.5rem;
+  padding: 0 2rem;
+}
+
+.marker-sm {
+  background-color: var(--btn-purple);
+  border-radius: 5px;
+  color: var(--whitee);
+  font-size: .7rem;
+  margin-left: .5rem;
+  padding: 3px 8px;
+}
+
+
 /* HERO SECTION */
 
 .hero-container {
   background-color: var(--primary-purple);
   color: var(--whitee);
   height: 48vh;
-  padding: 50px 28px 80px;
-  text-align: center;
+  padding: 50px 28px 80px;  
 }
 
 h1 {
@@ -151,10 +187,8 @@ h2 {
 
 /* SERVICES / SLIDESHOW SECTION */
 
-section#slideshow {
-  text-align: center;
-  padding: 2.5rem 0 0;
-  
+section#slideshow {  
+  padding: 2.5rem 0 0;  
 }
 
 .slideshow-container {
@@ -174,31 +208,41 @@ h2.service-hd {
   margin: 3.9rem 0 3rem;
 }
 
-p.slideshow-info {
-  margin: 0 0 4.5rem;
-  padding: 0 2rem;
-}
-
 button.btn-control {
   display: none;
-}
-
-.btn-plain {
-  border: 1px solid var(--primary-purple);
-  color: var(--primary-purple);
-  background-color: #fff;  
-  font-size: 1rem;
-  padding: 1rem 2.2rem;
 }
 
 hr {
   border: .5px solid var(--mid-grey);
 }
 
-/* FREE TRIAL SECTION */
+/* VIDEO DEMO TRIAL SECTION */
+
+section#video-demo {
+  padding: 4rem 2.5rem;
+}
+
+.marker-container {
+  padding: 0 .7rem 0;
+}
+
 video {
   background-image: url('./images/jonny-me-video.jpg');
+  object-fit: cover;
   width: 100%;
+}
+
+h3.marker-hd {
+
+}
+
+p.marker-info {
+  color: var(--dark-grey);
+  font-size: .9rem;
+}
+
+button.btn-video-demo {
+  margin: 1.3rem 0 3.8rem;
 }
 
 /* PORTFOLIO */

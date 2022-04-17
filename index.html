@@ -29,7 +29,7 @@
 
   <!-- HERO SECTION -->
   <section id="hero">
-    <div class="hero-container">
+    <div class="hero-container text-center">
       <h1>HALIFAX WORDPRESS & WEB APP DEVELOPMENT</h1>
       <p class="hero-text">Specializing in custom theme development. If you're a business seeking a web presence or are looking to hire, contact me <a class="link-here" href="#contact">here</a>.</p>
       <button class="btn btn-hero">Get started</button>
@@ -37,12 +37,12 @@
   </section>
 
   <!--SERVICES / SLIDESHOW SECTION -->
-  <section id="slideshow">
+  <section id="slideshow text-center">
     <div class="slideshow-container text-center">
       <div class="slide slide-1">
         <i class="fa-light fas fa-mobile-signal-out fa-2xl"></i>        
         <h2 class="service-hd">MOBILE-FRIENDLY</h2>
-        <p class="slideshow-info">A responsive design makes your website accessible to all users, regardless of their device.</p>
+        <p class="slideshow-info section-info">A responsive design makes your website accessible to all users, regardless of their device.</p>
         <button class="btn btn-control btn-left">&#10094;</button>
         <button class="btn btn-control btn-right">&#10095;</button>
         <button class="btn btn-plain btn-slideshow">Learn more</button>
@@ -55,12 +55,18 @@
   <section id="video-demo">
     <div class="video-demo-container text-center">
       <div class="slide slide-1">
-        <video controls autoplay muted>
-          <source src="./video/marker-io.mp4">
-          <source src="./video/marker-io.webm">
-          Your browser does not support the video tag
-        </video>        
-        <button class="btn btn-plain btn-video-demo">Get free trial</button>
+        <a href="https://marker.io/?via=jonny/">
+          <video controls autoplay muted loop>
+            <source src="./video/marker-io.mp4">
+            <source src="./video/marker-io.webm">
+            Your browser does not support the video tag
+          </video>
+        </a>        
+      </div>
+      <div class="marker-container">
+        <h3 class="marker-hd">Marker.io <span class="marker-sm">Recommended</span></h3>
+        <p class="marker-info">Collect client feedback and report bugs into Jira, Trello, Asana, Github directly from your site with screenshots, annotations, console logs, and more.</p>
+        <button class="btn btn-plain btn-fill btn-video-demo">Get free trial</button>
       </div>
     </div>
     <hr>
