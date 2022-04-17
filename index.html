@@ -127,22 +127,27 @@
   <footer id="footer" class="footer text-center">
     <h2 class="footer-hd">Get in touch</h2>
     <div class="form" id="form">
-      <form>
+      <form id="main-form" class="main-form">
         <div class="form-group">
-          <label class="label-g">EMAIL</label>
-          <input class="input-g" type="text" />
-      </div>
-      <div class="form-group">
-          <label class="label-g">PLAN (OPTIONAL)</label>
-          <input class="input-g" type="email" />
-      </div>
-      <div class="form-group">
-          <label class="label-g">MESSAGE</label>
-          <input class="input-g" type="textarea" />
-      </div>
-      <button class="btn" type="submit">Submit</button>
+          <label class="label-g">EMAIL</label><br>
+          <input id="email" class="form-control" type="email" />
+        </div>
+        <div class="form-group">
+            <label class="label-g">PLAN <small class="small-text">(OPTIONAL)</small></label><br>
+            <select name="plans" id="plans" class="plans-control">
+              <option value=""></option>
+              <option value="basic">Basic</option>
+              <option value="standard">Standard</option>
+              <option value="premium">Premium</option>              
+            </select>            
+        </div>
+        <div class="form-group">
+            <label class="label-g">MESSAGE</label>
+            <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+        </div>        
       </form>
     </div>
+    <button class="btn btn-plain btn-fill btn-video-demo">Send</button>
     <div class="footer-item-container">
       <a href="https://www.linkedin.com/in/sanyaodare/" class="footer-link" target="_blank">LinkedIn</a>
       <a href="mailto:sanyaodare@gmail.com" id="email-link" class="footer-link">Email</a>
